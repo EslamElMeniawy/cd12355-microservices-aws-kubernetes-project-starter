@@ -1,5 +1,9 @@
 FROM python:3.10-slim-buster
 
+USER root
+
+WORKDIR /src
+
 # Install required system dependencies in a single layer
 RUN apt update -y && apt install -y build-essential libpq-dev && rm -rf /var/lib/apt/lists/*
 
@@ -14,4 +18,4 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY ./analytics .
 
 # Default command
-CMD ["python", "app.py"]
+CMD python app.py
