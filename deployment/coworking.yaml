@@ -51,6 +51,6 @@ spec:
         - name: DB_PASSWORD
           valueFrom:
             secretKeyRef:
-              name: coworking-space
+              name: postgresql-service
               key: DB_PASSWORD
       restartPolicy: Always
