@@ -5,7 +5,7 @@ metadata:
 data:
   DB_NAME: mydatabase
   DB_USER: myuser
-  DB_HOST: "10.100.166.227"
+  DB_HOST: "10.100.190.85"
   DB_PORT: "5432"
 ---
 apiVersion: v1
